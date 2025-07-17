@@ -3,83 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact – Graphics Packaging Intl</title>
+  <title>Contact | Graphics Packaging International Nigeria</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>body { scroll-behavior: smooth; }</style>
+  <link rel="icon" href="image.png" />
 </head>
-<body class="bg-green-100 text-green-900 font-sans">
+<body class="bg-green-50 text-green-900">
 
   <!-- Header -->
-  <header class="bg-green-200 sticky top-0 py-4 shadow-md">
-    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-green-800">Graphics Packaging Intl</h1>
-      <nav class="space-x-4">
-        <a href="index.html" class="hover:text-green-600">Home</a>
-        <a href="services.html" class="hover:text-green-600">Services</a>
-        <a href="about.html" class="hover:text-green-600">About</a>
-        <a href="contact.html" class="hover:text-green-800 font-semibold">Contact</a>
-        <a href="sustainability.html"class="hover:text-green-600">Sustainability</a>
-      </nav>
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="image.png" alt="GPI Logo" class="h-12 w-12 object-contain" />
+        <div>
+          <h1 class="text-xl font-bold text-green-800 leading-tight">
+            Graphics Packaging International
+          </h1>
+          <span class="text-sm text-green-600">Nigeria Cartons Limited</span>
+        </div>
+      </div>
+
+      <!-- Three Dot Menu Button -->
+      <div class="relative">
+        <button id="menu-dots" class="text-green-800 focus:outline-none text-3xl select-none" aria-label="Open menu">
+          &#8942;
+        </button>
+
+        <nav id="dots-dropdown" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50">
+          <a href="index.html" class="block px-4 py-2 text-green-700 hover:bg-green-100">Home</a>
+          <a href="about.html" class="block px-4 py-2 text-green-700 hover:bg-green-100">About</a>
+          <a href="services.html" class="block px-4 py-2 text-green-700 hover:bg-green-100">Services</a>
+          <a href="sustainability.html" class="block px-4 py-2 text-green-700 hover:bg-green-100">Sustainability</a>
+          <a href="contact.html" class="block px-4 py-2 text-green-700 hover:bg-green-100">Contact</a>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <main class="max-w-4xl mx-auto px-4 py-16 bg-green-50 rounded-xl shadow-md">
-    <h2 class="text-4xl font-bold text-center text-green-800 mb-6">Get in Touch</h2>
-    <p class="mb-8 text-green-700">The next big idea could start with you. Tell us about a problem you want to solve or a product you want to create, and let’s get to work.</p>
+  <main class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-extrabold text-green-800 mb-6">Contact Us</h2>
+    <p class="text-lg text-green-700 mb-8">
+      We're here to help. Whether you have questions, need a quote, or just want to connect, reach out below.
+    </p>
+
     <form action="https://formsubmit.co/oluwashijibomiolaseni@gmail.com" method="POST" class="space-y-6">
       <input type="hidden" name="_captcha" value="false">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <input type="text" name="first_name" placeholder="First Name*" required class="p-3 border rounded w-full focus:ring-2 focus:ring-green-600"/>
-        <input type="text" name="last_name" placeholder="Last Name*" required class="p-3 border rounded w-full focus:ring-2 focus:ring-green-600"/>
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_subject" value="New Contact Form Submission from GPI Nigeria">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label for="firstName" class="block mb-1 font-semibold">First Name *</label>
+          <input id="firstName" name="First Name" required class="w-full px-4 py-2 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600" />
+        </div>
+        <div>
+          <label for="lastName" class="block mb-1 font-semibold">Last Name *</label>
+          <input id="lastName" name="Last Name" required class="w-full px-4 py-2 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600" />
+        </div>
       </div>
 
       <div>
-        <select name="inquiry_type" required class="p-3 border rounded w-full focus:ring-2 focus:ring-green-600">
-          <option value="">Choose an Inquiry Type…*</option>
-          <option>General Info</option>
+        <label for="email" class="block mb-1 font-semibold">Email *</label>
+        <input id="email" type="email" name="Email" required class="w-full px-4 py-2 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600" />
+      </div>
+
+      <div>
+        <label for="company" class="block mb-1 font-semibold">Company</label>
+        <input id="company" name="Company" class="w-full px-4 py-2 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600" />
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label for="country" class="block mb-1 font-semibold">Country *</label>
+          <select id="country" name="Country" required class="w-full px-4 py-2 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600">
+            <option value="">Select Country</option>
+            <option>Nigeria</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+          </select>
+        </div>
+        <div>
+          <label for="phone" class="block mb-1 font-semibold">Phone</label>
+          <input id="phone" name="Phone" class="w-full px-4 py-2 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600" />
+        </div>
+      </div>
+
+      <div>
+        <label for="inquiryType" class="block mb-1 font-semibold">How can we help you today? *</label>
+        <select id="inquiryType" name="Inquiry Type" required class="w-full px-4 py-2 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600">
+          <option value="">Choose Inquiry Type</option>
+          <option>General Information</option>
           <option>Product Inquiry</option>
           <option>Employment Inquiry</option>
           <option>Supplier Inquiry</option>
-          <option>Media / Transportation Inquiry</option>
+          <option>Other...</option>
         </select>
       </div>
 
       <div>
-        <select name="product_interest" class="p-3 border rounded w-full focus:ring-2 focus:ring-green-600">
-          <option value="">If Product, please indicate (optional)</option>
-          <option>Cold Cups</option>
-          <option>Canisters</option>
-          <option>Multipack Clips</option>
-          <option>Barrier Trays</option>
-          <option>Other</option>
-        </select>
+        <label for="message" class="block mb-1 font-semibold">Message *</label>
+        <textarea id="message" name="Message" rows="5" required class="w-full px-4 py-2 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <input type="email" name="email" placeholder="Email*" required autocomplete="email" class="p-3 border rounded w-full focus:ring-2 focus:ring-green-600"/>
-        <input type="tel" name="phone" placeholder="Phone" class="p-3 border rounded w-full focus:ring-2 focus:ring-green-600"/>
+      <div class="flex items-start">
+        <input id="updates" type="checkbox" name="Newsletter Opt-in" class="mt-1 mr-2 text-green-600 focus:ring-green-500" />
+        <label for="updates" class="text-green-700">
+          Please keep me updated on packaging solutions and news.
+        </label>
       </div>
 
-      <div>
-        <select name="country" required class="p-3 border rounded w-full focus:ring-2 focus:ring-green-600">
-          <option value="">Select Country*</option>
-          <option>Nigeria</option>
-          <option>United States</option>
-          <option>United Kingdom</option>
-          <!-- add more as needed -->
-        </select>
+      <div class="pt-4 border-t border-green-200">
+        <button type="submit" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition">
+          Submit Inquiry
+        </button>
+        <p class="mt-3 text-sm text-green-600">
+          By submitting, you agree to our <a href="privacy.html" class="underline hover:text-green-800">Privacy Policy</a>.
+        </p>
       </div>
-
-      <div>
-        <textarea name="message" placeholder="Your Message*" required class="p-3 border rounded w-full h-32 focus:ring-2 focus:ring-green-600"></textarea>
-      </div>
-
-      <button type="submit" class="block w-full bg-green-700 text-white px-6 py-3 rounded hover:bg-green-800 transition">Submit Inquiry</button>
     </form>
   </main>
 
-  <footer class="text-center py-6 bg-green-200 mt-10 text-green-900">
-    &copy; 2025 Graphics Packaging Intl Nigeria
+  <!-- Footer -->
+  <footer class="bg-green-900 text-green-200 text-center py-8 mt-10">
+    <p class="mb-2 font-semibold">Km.9, Lagos-Ibadan Expressway, Oba Otudeko Avenue, Oluyole LGA, Oyo Ibadan</p>
+    <p class="mb-2">
+      <a href="privacy.html" class="underline hover:text-green-300 transition">Privacy Policy</a>
+    </p>
+    <p>&copy; 2025 Graphics Packaging International Nigeria. All rights reserved.</p>
   </footer>
+
+  <!-- Dropdown Script -->
+  <script>
+    const menuDotsBtn = document.getElementById('menu-dots');
+    const dotsDropdown = document.getElementById('dots-dropdown');
+
+    menuDotsBtn.addEventListener('click', () => {
+      dotsDropdown.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!menuDotsBtn.contains(e.target) && !dotsDropdown.contains(e.target)) {
+        dotsDropdown.classList.add('hidden');
+      }
+    });
+  </script>
+
 </body>
 </html>
+
+
+    
+         
+          
