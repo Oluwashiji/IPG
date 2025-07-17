@@ -2,38 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Graphics Packaging Intl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Graphics Packaging International Nigeria</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-green-50 text-green-900 font-sans">
+<body class="bg-green-50 text-green-900">
 
-  <header class="bg-green-200 shadow-md sticky top-0 z-50">
+  <!-- Header with white background -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-green-800">
-        Graphics Packaging Intl<br />
-        <span class="text-sm text-green-700">Nigeria Cartons Limited</span>
-      </h1>
-      <nav class="space-x-6 font-medium text-green-900">
-        <a href="index.html" class="hover:text-green-600">Home</a>
-        <a href="services.html" class="hover:text-green-600">Services</a>
-        <a href="about.html" class="hover:text-green-600">About</a>
-        <a href="contact.html" class="hover:text-green-600">Contact</a>
-        <a href="sustainability.html"class="hover:text-green-600">Sustainability</a>
-      </nav>
+      <div class="flex items-center space-x-3">
+        <img src="image.png" alt="GPI Logo" class="h-12 w-12 object-contain" />
+        <div>
+          <h1 class="text-xl font-bold text-green-800 leading-tight">
+            Graphics Packaging International
+          </h1>
+          <span class="text-sm text-green-600">Nigeria Cartons Limited</span>
+        </div>
+      </div>
+
+      <!-- Three Dot Menu -->
+      <div class="relative">
+        <button id="menu-dots" class="text-green-800 focus:outline-none text-3xl select-none" aria-label="Open menu">
+          &#8942;
+        </button>
+        <nav id="dots-dropdown" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50">
+          <a href="index.html" class="block px-4 py-2 text-green-700 hover:bg-green-100">Home</a>
+          <a href="about.html" class="block px-4 py-2 text-green-700 hover:bg-green-100 font-semibold">About</a>
+          <a href="services.html" class="block px-4 py-2 text-green-700 hover:bg-green-100">Services</a>
+          <a href="sustainability.html" class="block px-4 py-2 text-green-700 hover:bg-green-100">Sustainability</a>
+          <a href="contact.html" class="block px-4 py-2 text-green-700 hover:bg-green-100">Contact</a>
+          <a href="privacy.html" class="block px-4 py-2 text-green-700 hover:bg-green-100">Privacy Policy</a>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <section class="py-16 px-4 max-w-5xl mx-auto">
-    <h2 class="text-4xl font-bold mb-4 text-green-800">About Us</h2>
-    <p class="text-lg text-green-700 mb-6">
-      Graphics Packaging Intl Nigeria is dedicated to providing world-class packaging and printing solutions with sustainability at its core. Our mission is to empower Nigerian businesses with innovative packaging that tells their brand story.
-    </p>
-    <p class="text-green-700">We’ve been operating in Nigeria for over a decade, serving a wide range of industries including food, beverages, electronics, and pharmaceuticals.</p>
+  <!-- Hero Section -->
+  <section class="bg-green-800 text-white py-20 text-center">
+    <h2 class="text-4xl font-extrabold mb-2">About Us</h2>
+    <p class="text-lg">Empowering brands with sustainable, high-impact packaging.</p>
   </section>
 
-  <footer class="bg-green-200 text-center text-sm py-6 mt-10 text-green-900">
-    &copy; 2025 Graphics Packaging Intl Nigeria. All rights reserved.
+  <!-- Main About Content -->
+  <main class="max-w-5xl mx-auto px-6 py-16 space-y-12">
+
+    <section>
+      <h3 class="text-3xl font-bold text-green-800 mb-4">Who We Are</h3>
+      <p class="text-lg text-green-700 leading-relaxed">
+        Graphics Packaging International Nigeria is a leader in innovative, sustainable packaging solutions across Nigeria and West Africa.
+        As a part of a global network, we combine local insight with international quality standards to deliver folding cartons and print services
+        that elevate our clients’ products and reduce environmental impact.
+      </p>
+    </section>
+
+    <section>
+      <h3 class="text-3xl font-bold text-green-800 mb-4">Our Mission</h3>
+      <p class="text-lg text-green-700 leading-relaxed">
+        Our mission is to revolutionize packaging with creativity, sustainability, and quality at the core.
+        We aim to support our customers in delivering exceptional brand experiences while safeguarding the planet.
+      </p>
+    </section>
+
+    <section>
+      <h3 class="text-3xl font-bold text-green-800 mb-4">Our Vision</h3>
+      <p class="text-lg text-green-700 leading-relaxed">
+        To be the most respected packaging partner in Africa, known for innovation, environmental responsibility, and customer excellence.
+      </p>
+    </section>
+
+    <section>
+      <h3 class="text-3xl font-bold text-green-800 mb-4">Why Choose Us</h3>
+      <ul class="list-disc pl-6 text-green-700 space-y-2 text-lg">
+        <li>Decades of packaging expertise across industries</li>
+        <li>Eco-conscious production and materials</li>
+        <li>Precision printing and custom designs</li>
+        <li>Fast turnaround and client-focused service</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-900 text-green-200 text-center py-8 mt-10">
+    <p class="mb-2 font-semibold">Km.9, Lagos-Ibadan Expressway, Oba Otudeko Avenue, Oluyole LGA, Oyo Ibadan</p>
+    <p class="mb-1">&copy; 2025 Graphics Packaging International Nigeria. All rights reserved.</p>
+    <a href="privacy.html" class="underline hover:text-white">Privacy Policy</a>
   </footer>
+
+  <!-- Toggle Script -->
+  <script>
+    const menuDotsBtn = document.getElementById('menu-dots');
+    const dotsDropdown = document.getElementById('dots-dropdown');
+
+    menuDotsBtn.addEventListener('click', () => {
+      dotsDropdown.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!menuDotsBtn.contains(e.target) && !dotsDropdown.contains(e.target)) {
+        dotsDropdown.classList.add('hidden');
+      }
+    });
+  </script>
+
 </body>
 </html>
