@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Graphics Packaging Intl</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>body { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-green-100 text-green-900 font-sans">
+
+  <!-- Header -->
+  <header class="bg-green-200 sticky top-0 py-4 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-green-800">Graphics Packaging Intl</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:text-green-600">Home</a>
+        <a href="services.html" class="hover:text-green-600">Services</a>
+        <a href="about.html" class="hover:text-green-600">About</a>
+        <a href="contact.html" class="hover:text-green-800 font-semibold">Contact</a>
+        <a href="sustainability.html"class="hover:text-green-600">Sustainability</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-16 bg-green-50 rounded-xl shadow-md">
+    <h2 class="text-4xl font-bold text-center text-green-800 mb-6">Get in Touch</h2>
+    <p class="mb-8 text-green-700">The next big idea could start with you. Tell us about a problem you want to solve or a product you want to create, and let’s get to work.</p>
+    <form action="https://formsubmit.co/oluwashijibomiolaseni@gmail.com" method="POST" class="space-y-6">
+      <input type="hidden" name="_captcha" value="false">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="text" name="first_name" placeholder="First Name*" required class="p-3 border rounded w-full focus:ring-2 focus:ring-green-600"/>
+        <input type="text" name="last_name" placeholder="Last Name*" required class="p-3 border rounded w-full focus:ring-2 focus:ring-green-600"/>
+      </div>
+
+      <div>
+        <select name="inquiry_type" required class="p-3 border rounded w-full focus:ring-2 focus:ring-green-600">
+          <option value="">Choose an Inquiry Type…*</option>
+          <option>General Info</option>
+          <option>Product Inquiry</option>
+          <option>Employment Inquiry</option>
+          <option>Supplier Inquiry</option>
+          <option>Media / Transportation Inquiry</option>
+        </select>
+      </div>
+
+      <div>
+        <select name="product_interest" class="p-3 border rounded w-full focus:ring-2 focus:ring-green-600">
+          <option value="">If Product, please indicate (optional)</option>
+          <option>Cold Cups</option>
+          <option>Canisters</option>
+          <option>Multipack Clips</option>
+          <option>Barrier Trays</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="email" name="email" placeholder="Email*" required autocomplete="email" class="p-3 border rounded w-full focus:ring-2 focus:ring-green-600"/>
+        <input type="tel" name="phone" placeholder="Phone" class="p-3 border rounded w-full focus:ring-2 focus:ring-green-600"/>
+      </div>
+
+      <div>
+        <select name="country" required class="p-3 border rounded w-full focus:ring-2 focus:ring-green-600">
+          <option value="">Select Country*</option>
+          <option>Nigeria</option>
+          <option>United States</option>
+          <option>United Kingdom</option>
+          <!-- add more as needed -->
+        </select>
+      </div>
+
+      <div>
+        <textarea name="message" placeholder="Your Message*" required class="p-3 border rounded w-full h-32 focus:ring-2 focus:ring-green-600"></textarea>
+      </div>
+
+      <button type="submit" class="block w-full bg-green-700 text-white px-6 py-3 rounded hover:bg-green-800 transition">Submit Inquiry</button>
+    </form>
+  </main>
+
+  <footer class="text-center py-6 bg-green-200 mt-10 text-green-900">
+    &copy; 2025 Graphics Packaging Intl Nigeria
+  </footer>
+</body>
+</html>
