@@ -2,6 +2,7 @@
 This is a website I built during my internship at Graphic Packaging International (GPI). While the company has a global site for all branches, I noticed the Nigeria branch lacked a dedicated online presence. This project provides a localized website that aligns with the global brand while highlighting Nigeria specific information for clients and partners.
 
 #WHY I BUILT THIS 
+
 Local clients and partners couldn’t easily find Nigeria-specific information.
 The global site wasn’t tailored to regional needs.
 This project allowed me to explore how a branch specific website can improve visibility, accessibility, and user experience.
