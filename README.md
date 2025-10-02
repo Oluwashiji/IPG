@@ -8,16 +8,22 @@ The global site wasn’t tailored to regional needs.
 This project allowed me to explore how a branch specific website can improve visibility, accessibility, and user experience.
 
 #FEATURES 
+
 This Website is fully responsive on desktop and mobile
 It maintains GPI’s clean global design
 It has a Simple structure, and it is easy to update or expand
 It has a functional contact form that sends submissions via emai
 
 #TECH STACK 
+
 HTML
 CSS
 
+Live Demo
+[View Website](https://oluwashiji.github.io/IPG/index.html)
+
 #WHAT I LEARNED
+
 How to analyze user needs and identify gaps in existing platforms
 How to apply web development skills to create practical, real-world solutions
 How localized websites can improve accessibility, visibility, and engagement
@@ -25,4 +31,5 @@ Working on a real problem and translating design and development into functional
 New skills in responsive design, front-end development, and version control with Git/GitHub
 
 #RESEARCH RELEVANCE
+
 This project strengthened my ability to observe real-world problems, and to design practical technical solutions, and evaluate their impact. These are the same skills i aim to bring to research projects in computer science 
